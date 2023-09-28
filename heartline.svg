@@ -1,0 +1,247 @@
+<svg id="mysvg" width="1280" height="1000" viewBOX="0, 0,1280,1000" style="enable-background:new 0 0 1280 1000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlinks">
+<style type="text/css">    
+
+#heartgradient2{animation:12s linear 0s infinite alternate mykey}
+@keyframes mykey{
+        0%{transform:translateY(1%);opacity:0;}
+        100%{transform:translateY(0%);opacity:0.5;}
+}
+#smallbubble{animation:3s linear 0.5s infinite normal bubbleline;}
+#smallbubble2{animation:3s linear 0.5s infinite normal bubbleline;}
+
+#smallheart{animation:3s linear 0.5s infinite normal fadeinout;}
+#bigheart{animation:6s linear 0s infinite normal fadeinout2;}
+@keyframes bubbleline {
+  from {
+    transform: translateY(0%); 
+    
+  }
+
+  to {
+
+    transform:translateY(-5%);
+
+  }
+}
+@keyframes fadeinout{
+        0%{opacity:1;}
+        100%{opacity:0;}
+}
+@keyframes fadeinout2{
+        0%{opacity:5%;}
+        5%{opacity:10%;}
+        10%{opacity:20%;}
+        20%{opacity:30%;}
+        30%{opacity:40%;}
+        40%{opacity:50%;}
+        50%{opacity:100%;}
+        60%{opacity:40%;}
+        70%{opacity:30%;}
+        80%{opacity:20%;}
+        90%{opacity:10%;}
+        100%{opacity:5%;}
+}
+@keyframes fishmoveline1 {
+  from {
+    transform: translateX(0%); 
+    
+  }
+
+  to {
+
+    transform:translateX(-30%);
+
+  }
+}
+</style>
+        <!--gradiation-->
+        <linearGradient id="heartgradient1"
+                gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="900" x2="100" y2="100">
+                    <stop offset="1%" stop-color="aquamarine" />
+                    <stop offset="99%" stop-color="pink" />
+                        <animate attributeName ="y1" dur="9s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="y2" dur="9s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <linearGradient id="heartgradient2" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="900" x2="100" y2="100">
+                    <stop offset="1%" stop-color="lightblue" />
+                    <stop offset="99%" stop-color="lightpink" />
+                        <animate attributeName ="y1" dur="9s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="y2" dur="9s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <linearGradient id="heartgradient3" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="900" x2="100" y2="100">
+                    <stop offset="1%" stop-color="lightgreen" />
+                    <stop offset="99%" stop-color="beige" />
+                        <animate attributeName ="y1" dur="9s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="y2" dur="9s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <!--fish gradation-->
+        <linearGradient id="fishgradient1" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="100" x2="200" y2="100">
+                    <stop offset="1%" stop-color="lightgreen" />
+                    <stop offset="99%" stop-color="beige" />
+                        <animate attributeName ="x1" dur="9s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="x2" dur="9s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <!--fish 4-->
+        <linearGradient id="fishGradient2" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="0" y1="0" x2="100" y2="0">
+                        <animate attributeName ="x1" dur="12s" from="-100%" to="100%" repeatCount = "indefinite"/>
+                        <animate attributeName ="x2" dur="12s" from="0%" to="200%" repeatCount = "indefinite"/>
+                        <stop offset="1%" stop-color="pink" />
+                        <stop offset="99%" stop-color="beige" />
+        </linearGradient>
+        <linearGradient id="fishGradient3" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="0" y1="0" x2="100" y2="0">
+                        <animate attributeName ="x1" dur="12s" from="-100%" to="100%" repeatCount = "indefinite"/>
+                        <animate attributeName ="x2" dur="12s" from="0%" to="200%" repeatCount = "indefinite"/>
+                        <stop offset="1%" stop-color="lightblue" />
+                        <stop offset="99%" stop-color="beige" />
+        </linearGradient>
+        <!--background gradation-->
+        <linearGradient id="bkgradient" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="800" x2="100" y2="100">
+                    <stop offset="1%" stop-color="seashell" />
+                    <stop offset="99%" stop-color="lavenderblush" />
+                        <animate attributeName ="y1" dur="12s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="y2" dur="12s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <!--tiny bubble color-->
+        <linearGradient id="tinybubblegradient" gradientTransform="rotate(80)">
+                <stop offset="1%"  stop-color="lavenderblush" />
+                <stop offset="99%" stop-color="pink" />
+        </linearGradient>
+        <!--fish bubble-->
+        <radialGradient id="fishbubble">
+                <stop offset="1%"  stop-color="lightblue" />
+                <stop offset="99%" stop-color="lightcyan" />
+        </radialGradient>
+
+
+        <path id="bk" fill="url(#bkgradient)" stroke="none" d="M0,800 0,0 1280,0 1280,800 z"/>
+        <!--heart lines-->
+        <g id="bigheart">
+        <!--swimming line2 heart-->
+        <path id="swim2" fill="url(#heartgradient1)" stroke="none" stroke-width="18" d="M1136.94,225.14c51.39,113.57-18.48,231.16-48.72,282.05-89.22,150.16-263.1,244-438.46,252.13C471.46,767.61,258.64,688.85,164.09,515,148,485.35,64.46,331.74,139.5,202.06,177.14,137,247.74,90,322.41,77.27c70-11.9,126.36,9.35,146.15,17.1C573.84,135.57,573.93,206.75,639.5,218.3,733.86,234.92,769.76,93.87,897.62,81.55,990.56,72.59,1096.2,135.09,1136.94,225.14Z"/>
+
+        <!--swimming line3 heart-->
+        <path id="swim3" fill="url(#heartgradient2)" stroke="none" d="M1036,282.12c41.11,90.86-14.79,184.93-39,225.64C925.59,627.89,786.49,703,646.2,709.47,503.56,716.1,333.31,653.09,257.66,514,244.78,490.29,178,367.4,238,263.66c30.11-52,86.59-89.68,146.32-99.83,56-9.52,101.09,7.48,116.93,13.68,84.21,33,84.29,89.9,136.75,99.14,75.48,13.3,104.2-99.54,206.49-109.4C918.85,160.08,1003.35,210.08,1036,282.12Z"/>
+        <!--swimming line4 heart-->
+        <path id="swim4" fill="url(#heartgradient3)" stroke="none" d="M955.15,324C988,396.65,943.33,471.9,924,504.47c-57.1,96.1-168.39,156.15-280.61,161.37-114.12,5.3-250.32-45.11-310.84-156.4-10.3-18.95-63.75-117.26-15.73-200.25,24.09-41.63,69.27-71.74,117.06-79.87,44.81-7.61,80.87,6,93.54,10.94,67.38,26.37,67.44,71.93,109.4,79.32C697.18,330.22,720.15,240,802,232.06,861.47,226.32,929.08,266.33,955.15,324Z"/>
+        </g>
+        <!--small heart-->
+        <g id="smallheart" transform="translate(580,450) scale(0.1)">
+                <!--swimming line2 heart-->
+                <path id="swim5" fill="url(#heartgradient1)" stroke="none" stroke-width="18" d="M1136.94,225.14c51.39,113.57-18.48,231.16-48.72,282.05-89.22,150.16-263.1,244-438.46,252.13C471.46,767.61,258.64,688.85,164.09,515,148,485.35,64.46,331.74,139.5,202.06,177.14,137,247.74,90,322.41,77.27c70-11.9,126.36,9.35,146.15,17.1C573.84,135.57,573.93,206.75,639.5,218.3,733.86,234.92,769.76,93.87,897.62,81.55,990.56,72.59,1096.2,135.09,1136.94,225.14Z"/>
+                <!--swimming line3 heart-->
+                <path id="swim6" fill="url(#heartgradient2)" stroke="none" d="M1036,282.12c41.11,90.86-14.79,184.93-39,225.64C925.59,627.89,786.49,703,646.2,709.47,503.56,716.1,333.31,653.09,257.66,514,244.78,490.29,178,367.4,238,263.66c30.11-52,86.59-89.68,146.32-99.83,56-9.52,101.09,7.48,116.93,13.68,84.21,33,84.29,89.9,136.75,99.14,75.48,13.3,104.2-99.54,206.49-109.4C918.85,160.08,1003.35,210.08,1036,282.12Z"/>
+                <!--swimming line4 heart-->
+                <path id="swim7" fill="url(#heartgradient3)" stroke="none" d="M955.15,324C988,396.65,943.33,471.9,924,504.47c-57.1,96.1-168.39,156.15-280.61,161.37-114.12,5.3-250.32-45.11-310.84-156.4-10.3-18.95-63.75-117.26-15.73-200.25,24.09-41.63,69.27-71.74,117.06-79.87,44.81-7.61,80.87,6,93.54,10.94,67.38,26.37,67.44,71.93,109.4,79.32C697.18,330.22,720.15,240,802,232.06,861.47,226.32,929.08,266.33,955.15,324Z"/>
+        </g>
+
+        <circle id="tinybubble" cx="0" cy="0" r="2" fill="url(#tinybubblegradient)"/>
+ 
+        <!--shiny thing background-->
+        <use href="#tinybubble">
+                <animateMotion begin="0s" dur="10" path="M400,580 400,445" repeatCount="indefinite"/>
+        </use>
+        <use href="#tinybubble">
+                <animateMotion begin="0s" dur="7" path="M550,650 520,445" repeatCount="indefinite"/>
+        </use>
+        <use href="#tinybubble">
+                <animateMotion begin="0s" dur="8" path="M530,650 480,445" repeatCount="indefinite"/>
+        </use>
+        <use href="#tinybubble">
+                <animateMotion begin="0s" dur="12" path="M580,650 580,445" repeatCount="indefinite"/>
+        </use>
+        <use href="#tinybubble">
+                <animateMotion begin="0s" dur="12.5" path="M680,650 680,445" repeatCount="indefinite"/>
+        </use>
+        <use href="#tinybubble">
+                <animateMotion begin="0s" dur="13" path="M750,630 750,445" repeatCount="indefinite"/>
+        </use>
+        <use href="#tinybubble">
+                <animateMotion begin="0s" dur="9" path="M850,580 850,445" repeatCount="indefinite"/>
+        </use>
+        <!--fish6 eye in the middle-->
+        <g transform="translate(-100,-100)">
+        <g id="fish6">
+                <path d="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0" stroke="pink" stroke-width="1" fill="url(#fishgradient1)">             
+                <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q62,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q60,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;"/>
+                </path>
+                <!--fish eye-->
+                <path id="fisheye6" d="M9.5,0 C12,-5 18,0 15,3 S8.5,2 9.5,0" stroke="none" fill="deeppink"/>
+                
+        </g>                
+        </g>
+
+        <!--using spiral line and fish6-->
+        <use href="#fish6" >
+                <animateMotion begin="0s" dur="12s" repeatCount="indefinite" rotate="auto-reverse">
+                        <mpath href="#swim2"/>
+                </animateMotion>
+        </use>
+        <use href="#fish6">
+                <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+                <animateMotion begin="0.25s" dur="12s" repeatCount="indefinite" rotate="auto-reverse">
+                        <mpath href="#swim2"/>
+                </animateMotion>
+        </use>
+        <use href="#fish6">
+                <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+                <animateMotion begin="0.5s" dur="12s" repeatCount="indefinite" rotate="auto-reverse">
+                        <mpath href="#swim2"/>
+                </animateMotion>
+        </use>
+        <use href="#fish6">
+                <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+                <animateMotion begin="0.1s" dur="12s" repeatCount="indefinite" rotate="auto-reverse">
+                        <mpath href="#swim3"/>
+                </animateMotion>
+        </use>
+        <use href="#fish6">
+                <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+                <animateMotion begin="0.4s" dur="12s" repeatCount="indefinite" rotate="auto-reverse">
+                        <mpath href="#swim3"/>
+                </animateMotion>
+        </use>
+        <use href="#fish6">
+                <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+                <animateMotion begin="0.25s" dur="12s" repeatCount="indefinite" rotate="auto-reverse">
+                        <mpath href="#swim4"/>
+                </animateMotion>
+        </use>
+
+        <!--fish2-->
+        <g transform="translate(660,570) scale(2)">
+        <g id="fish2">
+                <path d="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0 z" stroke="pink" stroke-width="1" fill="url(#fishGradient3)">             
+                <animate attributeName="d" dur="3s" repeatCount="indefinite" values="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0 z;M0,5 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,-5 L5,0 0,5 z;" />
+                </path> 
+
+                <!--small bubble-->
+                <path id="smallbubble" d="M-5,0 C-2,-5 5,0 2,5 S-9,5 -5,0" stroke="none" fill="url(#fishbubble)" />
+        </g>
+                <!--fish eye-->
+                <path id="fisheye" d="M9.5,-3 C12,-8 18,-3 15,0 S8.5,-1 9.5,-3" stroke="none" fill="deeppink"/>
+                
+        </g>
+        <!--fish3-->
+        <g transform="translate(530,570) scale(2)">
+        <g id="fish3">
+                <path d="M0,6 -15,15 Q-20,0 -15,-15 L0,-6 Q27,-30 50,0 Q27,30 0,6 " stroke="pink" stroke-width="1" fill="url(#fishGradient3)">             
+                <animate attributeName="d" dur="3s" repeatCount="indefinite" values="M0,6 -15,15 Q-20,0 -15,-15 L0,-6 Q27,-30 50,0 L50,0 50,0 Q27,30 0,6 ;M0,6 -15,15 Q-20,0 -15,-15 L0,-6 Q27,-30 50,-5 L45,0 50,5 Q27,30 0,6;" />
+                </path> 
+
+                <!--small bubble-->
+                <path id="smallbubble2" d="M48,0 C51,-5 58,0 55,5 S44,5 48,0z" stroke="none" fill="url(#fishbubble)"/>
+        </g>
+                <!--fish eye-->
+                <path id="fisheye2" d="M35.5,-3 C38,-8 44,-3 41,0 S34.5,-1 35.5,-3z" stroke="none" fill="deeppink"/>
+                
+        </g>
+
+
+</svg>

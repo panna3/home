@@ -1,0 +1,297 @@
+<svg id="mysvg" width="1280" height="850" viewBOX="0, 0,1280,850" style="enable-background:new 0 0 1280 850;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlinks">
+<style type="text/css">
+#spiral3{opacity:0.07}
+#insidemouth {   opacity:0.1;
+    transform-box:fill-box;
+    transform-origin:center;
+    animation:insidemouth 5s linear infinite;
+}
+@keyframes insidemouth {
+    50%{transform:rotate(1turn);}
+}
+#insidemouth2 {   opacity:0.5;
+    transform-box:fill-box;
+    transform-origin:center;
+    animation:insidemouth2 10s linear infinite;
+}
+@keyframes insidemouth2 {
+    50%{transform:rotate(1turn);}
+}
+</style>
+        <!--fish gradation-->
+        <linearGradient id="fishgradient1" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="100" x2="200" y2="100">
+                    <stop offset="1%" stop-color="lightgreen" />
+                    <stop offset="99%" stop-color="beige" />
+                        <animate attributeName ="x1" dur="9s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="x2" dur="9s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <linearGradient id="fishgradient2" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="100" x2="200" y2="100">
+                    <stop offset="1%" stop-color="pink" />
+                    <stop offset="99%" stop-color="beige" />
+                        <animate attributeName ="x1" dur="9s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="x2" dur="9s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <linearGradient id="fishgradient3" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="100" x2="200" y2="100">
+                    <stop offset="1%" stop-color="lightblue" />
+                    <stop offset="99%" stop-color="beige" />
+                        <animate attributeName ="x1" dur="9s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="x2" dur="9s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <linearGradient id="fishgradient4" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="100" x2="200" y2="100">
+                    <stop offset="1%" stop-color="lavender" />
+                    <stop offset="99%" stop-color="beige" />
+                        <animate attributeName ="x1" dur="9s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="x2" dur="9s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <!--background gradation color animation-->
+        <linearGradient id="bkgradient" gradientUnits="objectBoundingBox" spreadMethod="reflect"
+                x1="100" y1="1000" x2="100" y2="0">
+                    <stop offset="1%" stop-color="cadetblue" />
+                    <stop offset="99%" stop-color="lightblue" />
+                        <animate attributeName ="y1" dur="9s" from="200%" to="0%" repeatCount = "indefinite"/>
+                        <animate attributeName ="y2" dur="9s" from="100%" to="-100%" repeatCount = "indefinite"/>
+        </linearGradient>
+        <!--circle gradient animation-->
+        <linearGradient id="circlegradient1">            
+            <stop offset="1%" stop-color="paleturquoise" />
+            <stop offset="99%" stop-color="darkslateblue" />
+        </linearGradient>
+        <!--circle gradient animation2-->
+        <linearGradient id="circlegradient2">            
+            <stop offset="1%" stop-color="paleturquoise" />
+            <stop offset="99%" stop-color="darkslateblue" />
+        </linearGradient>
+        <!--eye-->
+        <radialGradient id="eyeGradient" gradientTransform="rotate(-15)">
+            <stop offset="1%" stop-color="paleturquoise" />
+            <stop offset="99%" stop-color="black" />
+        </radialGradient>
+    <!--background-->
+    <path fill="url(#bkgradient)" stroke="none" d="M0,1000 0,0 1280,0 1280,1000 z"/>
+    
+    <g >
+    <!--circle gradient-->
+    <circle cx="750" cy="590" r="1000" id="insidemouth2"  fill="url(#circlegradient2)" stroke="none" />
+    <!--fish-->
+    <path d="M253,350 C270,300 450,250 510,180 S570,115 700,95 S1340,-250 920,550" fill="gray" stroke="black" stroke-width="6"/>
+    
+    <path d="M253,350 C270,300 450,275 510,230 S570,160 700,140 S1250,-150 920,550 Q400,1200 253,350z" fill="white" stroke="white" stroke-width="6"/>
+    <!--mouth-->  
+    <path id="bigmouth" fill="#fca8a8" stroke="black" stroke-width="6" d="M350,380 Q1280,-150 880,530 Q450,1000 350,380z"/>
+    <path id="bigmouth" fill="none" stroke="#fc6767" stroke-width="6" d="M357,383.5 Q1270,-140 878,523 Q455,991 357,383.5z"/>
+    <!--gum-->
+    <path id="gum" fill="#fbcbcb" stroke="none" d="M360,385 Q1210,-75 875,520 Q460,910 360,385z"/>
+    
+   <!-- <path id="detailmouth" fill="none" stroke="#fc6767" d="M379,380 Q1100,25 890,500"/>-->
+    <!--detail inside mouth-->
+    <!--right-->
+    <path stroke="#fc6767" fill="#fc6767" d="M880,350 Q920,370 895,450 Q910,375 880,350"/>
+    <path stroke="#fc6767" fill="#fc6767" d="M875,370 Q905,390 880,460 Q895,395 875,370"/>
+    <!--left-->
+    <path stroke="#fc6767" fill="#fc6767" d="M780,285 Q740,255 650,290 Q740,265 780,285"/>
+    <path stroke="#fc6767" fill="#fc6767" d="M765,300 Q730,275 635,310 Q715,285 765,300"/>
+    <!--teeth-->
+    <path fill="white" stroke="black" d="M373,380 395,385 L405,361"/>
+    <path fill="white" stroke="black" d="M415,358 445,365 461,332"/>
+    <path fill="white" stroke="black" d="M478,325 505,335 520,302"/>
+    <path fill="white" stroke="black" d="M535,296 560,305 573,278"/>
+    <path fill="white" stroke="black" d="M588,272 611,283 625,255"/>
+    <path fill="white" stroke="black" d="M640,250 662,262 675,235"/>
+    <path fill="white" stroke="black" d="M690,230 711,243 725,217"/>
+    <path fill="white" stroke="black" d="M740,212 758,227 774,201"/>
+    <path fill="white" stroke="black" d="M790,197 808,215 824,190"/>
+    <path fill="white" stroke="black" d="M843,187 858,208 876,184.5"/>
+    <path fill="white" stroke="black" d="M895,186 901,211 920,191"/>
+    <path fill="white" stroke="black" d="M940,200 932,230 958,218"/>
+    <path fill="white" stroke="black" d="M966,238 958,255 969,272"/>
+    <path fill="white" stroke="black" d="M968,288 960,302 964,312"/>
+    <!--bottom teeth-->
+    <path fill="white" stroke="black" d="M442,610 Q461,610 475,600 Q462,615 458,630"/>
+    <path fill="white" stroke="black" d="M470,643 Q485,640 515,620 Q500,640 495,662"/>
+    <path fill="white" stroke="black" d="M510,671 Q537,660 550,643 Q538,663 535,682"/>
+    <path fill="white" stroke="black" d="M555,685 Q565,680 575,660 Q568,680 570,686"/>
+    <!--spiral line-->
+    <path id="spiral" fill="none" stroke="none" d="M1058.31,461.56c-2.52,157.12-155.37,282.77-341.39,280.64-148.82-1.7-267.83-105-265.81-230.68,1.61-100.56,99.43-181,218.49-179.61C764.84,333,841,399.1,839.72,479.54c-1,64.36-63.64,115.83-139.84,115-61-.7-109.7-43-108.87-94.49.66-41.19,40.73-74.13,89.49-73.57,39,.45,70.21,27.52,69.68,60.47-.42,26.36-26.07,47.44-57.28,47.09-25-.29-44.93-17.62-44.59-38.71"/>
+    <path id="spiral2" fill="none" stroke="none" d="M963.44,385c-5.13,172.65-90.6,281.19-276.93,284.61C593,669.58,501,601.21,524.12,479.84"/>
+    <path id="spiral3" fill="none" stroke="url(#bkgradient)" stroke-width="45" d="M451.11,511.52c1.61-100.56,99.43-181,218.49-179.61C764.84,333,841,399.1,839.72,479.54c-1,64.36-63.64,115.83-139.84,115-61-.7-109.7-43-108.87-94.49.66-41.19,40.73-74.13,89.49-73.57,39,.45,70.21,27.52,69.68,60.47-.42,26.36-26.07,47.44-57.28,47.09-25-.29-44.93-17.62-44.59-38.71"/>
+    <!--circle gradiation-->
+    <circle cx="700" cy="560" r="280" id="insidemouth"  fill="url(#circlegradient1)" stroke="none" />
+
+    <!--eye-->
+    <path d="M565,135 C565,135 563,120 577,117 S596,124 596,135 C596,135 596,145 585,150 S565,145 565,135" fill="url(#eyeGradient)" stroke="black" stroke-width="2"/>
+    <!--nose-->
+    <path d="M815,95 Q810,108 820,115" stroke="black"/>
+    <path d="M1048,215 Q1048,225 1036,230" stroke="black"/>
+    <!--lines next to nose-->
+    <path d="M900,120 Q1007,105 1018,180" stroke="black" fill="none"/>
+    <path d="M910,130 Q1000,120 1009,185" stroke="black" fill="none"/>
+</g>
+        <!--small fish-->
+        <g transform="translate(-100,-100)">
+        <g id="fish1">
+                <path d="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0" stroke="pink" stroke-width="1" fill="url(#fishgradient1)">             
+                <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q62,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q60,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;"/>
+                </path>
+                <!--fish eye-->
+                <path id="fisheye6" d="M9.5,0 C12,-5 18,0 15,3 S8.5,2 9.5,0" stroke="none" fill="deeppink"/>
+                
+        </g>  
+        </g>
+        <!--small fish2-->
+        <g transform="translate(-100,-100)">
+        <g id="fish2">
+                <path d="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0" stroke="pink" stroke-width="1" fill="url(#fishgradient2)">             
+                <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q62,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q60,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;"/>
+                </path>
+                <!--fish eye-->
+                <path id="fisheye6" d="M9.5,0 C12,-5 18,0 15,3 S8.5,2 9.5,0" stroke="none" fill="deeppink"/>
+                
+        </g>  
+        </g>
+        <!--small fish3-->
+        <g transform="translate(-100,-100)">
+        <g id="fish3">
+                <path d="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0" stroke="pink" stroke-width="1" fill="url(#fishgradient3)">             
+                <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q62,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q60,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;"/>
+                </path>
+                <!--fish eye-->
+                <path id="fisheye6" d="M9.5,0 C12,-5 18,0 15,3 S8.5,2 9.5,0" stroke="none" fill="deeppink"/>
+                
+        </g>  
+        </g>
+        <!--small fish4-->
+        <g transform="translate(-100,-100)">
+        <g id="fish4">
+                <path d="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0" stroke="pink" stroke-width="1" fill="url(#fishgradient4)">             
+                <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q62,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L55,13 Q60,0 55,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0 L0,0 0,0;"/>
+                </path>
+                <!--fish eye-->
+                <path id="fisheye6" d="M9.5,0 C12,-5 18,0 15,3 S8.5,2 9.5,0" stroke="none" fill="deeppink"/>
+                
+        </g>  
+        </g>
+        <!--fish animation-->
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="0.25s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish3" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="0.5s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="2s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="2.5s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="2.8s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="5s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish2" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="5.25s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="5.55s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="6s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish2" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="6.5s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish3" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="7s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="7.25s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish3" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="8s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish4" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="8.25s" dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="2s" dur="4s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral2"/>
+            </animateMotion>
+        </use>
+        <use href="#fish2" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="2.5s" dur="4s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral2"/>
+            </animateMotion>
+        </use>
+        <use href="#fish3" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="2.85s" dur="4s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral2"/>
+            </animateMotion>
+        </use>
+        <use href="#fish4" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="3.2s" dur="4s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral2"/>
+            </animateMotion>
+        </use>
+        <use href="#fish1" >
+            <animateMotion begin="0s" dur="12s" repeatCount="0" path="M -1500,-100"/><!--hide-->
+            <animateMotion begin="3.8s" dur="4s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#spiral2"/>
+            </animateMotion>
+        </use>
+</svg>

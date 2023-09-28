@@ -1,0 +1,234 @@
+<svg id="mysvg" width="1000" height="1000" viewBOX="0, 0,1000,1000" style="enable-background:new 0 0 1000 1000;" xmlns="http://www.w3.org/2000/svg">
+<style>
+#mysvg{background-color:black;}
+</style>
+<!--suisou-->
+        <defs>
+                <linearGradient id="myGradient1" gradientTransform="rotate(90)">
+                        <stop offset="1%"  stop-color="transperant" />
+                        <stop offset="99%" stop-color="lightblue" />
+                </linearGradient>
+                <linearGradient id="myGradient2" gradientTransform="rotate(90)">
+                        <stop offset="5%"  stop-color="white" />
+                        <stop offset="95%" stop-color="silver" />
+                </linearGradient>
+                <radialGradient id="myGradient3" gradientUnits="userSpaceOnUse"
+                cx="500" cy="110" r="390" fx="500" fy="110">
+                        <stop offset="0%" stop-color="black" />
+                        <stop offset="50%" stop-color="aqua" />
+                        <stop offset="100%" stop-color="black" />
+                </radialGradient >
+                <linearGradient id="myGradient4">
+                        <stop offset="1%"  stop-color="gold" />
+                        <stop offset="99%" stop-color="deeppink" />
+                </linearGradient>
+                <linearGradient id="myGradient5">
+                        <stop offset="1%"  stop-color="aqua" />
+                        <stop offset="99%" stop-color="greenyellow" />
+                </linearGradient>
+                <linearGradient id="myGradient5">
+                        <stop offset="1%"  stop-color="aqua" />
+                        <stop offset="99%" stop-color="greenyellow" />
+                </linearGradient>
+                <linearGradient id="myGradient6" gradientTransform="rotate(90)">
+                        <stop offset="1%"  stop-color="aqua" />
+                        <stop offset="99%" stop-color="greenyellow" />
+                </linearGradient>
+                <linearGradient id="myGradient7" gradientTransform="rotate(20)">
+                        <stop offset="1%"  stop-color="aqua" />
+                        <stop offset="99%" stop-color="pink" />
+                </linearGradient>
+                <linearGradient id="myGradient8" gradientTransform="rotate(120)">
+                        <stop offset="1%"  stop-color="aqua" />
+                        <stop offset="99%" stop-color="hotpink" />
+                </linearGradient>
+                <linearGradient id="myGradient9" gradientTransform="rotate(80)">
+                        <stop offset="1%"  stop-color="aqua" />
+                        <stop offset="99%" stop-color="lime" />
+                </linearGradient>
+                <linearGradient id="myGradient10" gradientTransform="rotate(80)">
+                        <stop offset="1%"  stop-color="silver" />
+                        <stop offset="99%" stop-color="lightblue" />
+                </linearGradient>
+                <linearGradient id="myGradient11">
+                        <stop offset="1%"  stop-color="aqua" />
+                        <stop offset="99%" stop-color="hotpink" />
+                </linearGradient>
+                <radialGradient id="myGradient12">
+                        <stop offset="20%" stop-color="gold" />
+                        <stop offset="95%" stop-color="lightgreen" />
+                </radialGradient>
+        </defs>
+
+        <!--water-->
+        <path d="M100,900 Q100,455.66 100,455.66 c24.59-19.56,59.89-13.23,91-9.06a460.24,460.24,0,0,0,118.83.43c19.93-2.53,40.22-6.36,59.94-2.47,14.42,2.85,27.72,9.69,41.77,14,66.9,20.49,139-18.41,208.14-7.74,31.82,4.91,64.51,20.16,94.8,9.24,6.94-2.51,13.49-6.35,20.79-7.49s16,1.43,18.8,8.25 Q900,455.66 900,460.66 L900,900 100,900" stroke="black" fill="url(#myGradient1)" />
+        <polygon points="100,900 100,300 900,300 900,900 100,900" stroke="silver" fill="none"/><!--suisou-->
+        <path d="M220,290 Q480,200 780,290" width="5" fill="url(#myGradient3)"/><!--neon light-->
+        <!--light cover-->
+        <path d="M 200,280 800,280 Q 480,100 200,280" stroke="black" fill="url(#myGradient2)" />
+        <!--line1-->
+        <path id="line1" d="M680,680 Q 450,600 250,680 Q 450,750 680,680" fill="none"/>
+        <!--line2-->
+        <path id="line2" d="M780,580 Q550,500 200,580 Q550,650 780,580" fill="none"/>
+        <!--line3-->
+        <path id="line3" d="M795,520 Q560,450 200,520 Q580,650 795,520" fill="none"/>
+        <!--sand-->
+        <path id="sand" d="M100,900 Q100,800 100,800 c24.59-19.56,59.89-13.23,91-9.06a460.24,460.24,0,0,0,118.83.43c19.93-2.53,40.22-6.36,59.94-2.47,14.42,2.85,27.72,9.69,41.77,14,66.9,20.49,139-18.41,208.14-7.74,31.82,4.91,64.51,20.16,94.8,9.24,6.94-2.51,13.49-6.35,20.79-7.49s16,1.43,18.8,8.25 Q900,810 900,800 L900,900 100,900" fill="beige"/>
+        <path id="kusa" d="M720,850 C730,800 750,750 720,700 S690,630 650,600" stroke="green" fill="none" stroke-width="2"/>
+        <path id="eda1" d="M720,700 C720,700 680,650 710,600" stroke="green" fill="none" stroke-width="2"/>
+        
+        <circle id="light1" cx="650" cy="600" r="5" fill="url(#myGradient12)"/><!--circle on the branch-->
+        <path id="eda3" d="M645,630 Q690,640 720,700" fill="none" stroke="green"/>
+        <circle cx="645" cy="630" r="5" fill="url(#myGradient12)"/>
+        <circle cx="710" cy="600" r="5" fill="url(#myGradient12)"/>
+        <circle cx="650" cy="800" r="10" fill="url(#myGradient5)"/>
+        <circle cx="600" cy="820" r="10" fill="url(#myGradient6)"/>
+        <circle cx="280" cy="810" r="10" fill="url(#myGradient7)"/>
+        <circle cx="480" cy="870" r="10" fill="url(#myGradient8)"/>
+        <circle cx="180" cy="790" r="50" fill="url(#myGradient9)"/>
+        
+        <defs>
+        <!--bubble-->
+        <circle id="bubble1" cx="0" cy="0" r ="6" fill="url(#myGradient10)" />
+        <!--bubble line1-->
+        <path id="bline1" d="M200,770 C210,660 207,650 205,600 S205,480 207,455.66" fill="none"/>
+        <!--bubble line2-->
+        <path id="bline2" d="M160,770 C170,660 168,650 165,600 S165,480 168,455.66" fill="none"/>
+        <!--bubble line3-->
+        <path id="bline3" d="M188,770 C190,660 185,650 190,600 S190,480 188,455.66" fill="none"/>
+        <!--bubble line4-->
+        <path id="bline4" d="M150,770 C153,660 148,650 152,600 S152,480 150,455.66" fill="none"/>
+        
+        
+        <!--fish1 closed mouth-->
+        <g id="fish1">
+                <path d="M0,0 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,0" stroke="gold" stroke-width="1" fill="url(#myGradient4)"/>
+                <circle cx="11" cy="0" r="3" fill="chocolate"/>
+                <path d="M20,10 Q25,-1 20,-10" stroke-width="1" fill="none" stroke="gold"/>
+        
+        </g>
+        <!--fish2 open mouth-->
+        <g id="fish2">
+                <path d="M0,5 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,-5 L5,0 0,5" stroke="orange" stroke-width="1" fill="url(#myGradient5)"/>
+                <circle cx="11" cy="0" r="3" fill="deeppink"/><!--eye-->
+                <path d="M23,-12 Q30,-7 23,-3 Q30,2 23,5 Q30,10 23,13" stroke="orange" fill="none" stroke-width="1"/><!--uroko1-->
+                <path d="M30,-9 Q37,-5 30,0 Q37,5 30,9" stroke="orange" fill="none" stroke-width="1"/><!--uroko2-->
+                <path d="M37,-3 Q44,0 37,5" stroke="orange" fill="none" stroke-width="1"/><!--uroko3-->
+        </g>
+        <g id="fish3">
+                <path d="M0,5 Q 20,30 50,5 L65,13 Q72,0 65,-17 L50,-8 Q20,-30 0,-5 L5,0 0,5" stroke="pink" stroke-width="1" fill="url(#myGradient11)"/>
+                <circle cx="11" cy="0" r="3" fill="deeppink"/><!--eye-->
+                <path d="M23,-12 Q30,-7 23,-3 Q30,2 23,5 Q30,10 23,13" stroke="pink" fill="none" stroke-width="1"/><!--uroko1-->
+                <path d="M30,-9 Q37,-5 30,0 Q37,5 30,9" stroke="pink" fill="none" stroke-width="1"/><!--uroko2-->
+                <path d="M37,-3 Q44,0 37,5" stroke="pink" fill="none" stroke-width="1"/><!--uroko3-->
+                <path d="M55,-5 63,-9" stroke="pink" fill="none" stroke-width="1"/>
+                <path d="M55,-2 64,-4" stroke="pink" fill="none" stroke-width="1"/>
+                <path d="M55,1 64,1.5" stroke="pink" fill="none" stroke-width="1"/>
+                <path d="M55,4 63,7" stroke="pink" fill="none" stroke-width="1"/>
+        </g>
+        </defs>
+        <!--animation bubble1-->
+        <use href="#bubble1"><!--bubble line1-->   
+                <animateMotion begin="0s" dur="3s" repeatCount="indefinite">
+                        <mpath href="#bline1"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1">
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.1s" dur="2.5s" repeatCount="indefinite">
+                        <mpath href="#bline1"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1">
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.3s" dur="2.8s" repeatCount="indefinite">
+                        <mpath href="#bline1"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1">
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.4s" dur="3.2s" repeatCount="indefinite">
+                        <mpath href="#bline1"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1"><!--bubble line2-->
+                <animateMotion begin="0s" dur="2.5s" repeatCount="indefinite">
+                        <mpath href="#bline2"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1">
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.1s" dur="2.7s" repeatCount="indefinite">
+                        <mpath href="#bline2"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1">
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.2s" dur="2.8s" repeatCount="indefinite">
+                        <mpath href="#bline2"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1"><!--bubble line3-->
+                <animateMotion begin="0s" dur="2.4s" repeatCount="indefinite">
+                        <mpath href="#bline3"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1">
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.2s" dur="2.6s" repeatCount="indefinite">
+                        <mpath href="#bline3"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1">
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.5s" dur="2.95s" repeatCount="indefinite">
+                        <mpath href="#bline3"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1"><!--bubble line4-->
+                <animateMotion begin="0s" dur="2.8s" repeatCount="indefinite">
+                        <mpath href="#bline4"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1"><!--delay-->
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.1s" dur="2.92s" repeatCount="indefinite">
+                        <mpath href="#bline4"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1">
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.2s" dur="3.15s" repeatCount="indefinite">
+                        <mpath href="#bline4"/>
+                </animateMotion>
+        </use>
+        <use href="#bubble1">
+                <animateMotion  begin="0s" repeatCount="0" path="M -50,0"/><!--hide-->
+                <animateMotion begin="0.4s" dur="3.2s" repeatCount="indefinite">
+                        <mpath href="#bline4"/>
+                </animateMotion>
+        </use>
+        <!--animation fish1-->
+        <use href="#fish1">
+                
+                <animateMotion begin="0s" dur="10s" repeatCount="indefinite" rotate="auto-reverse">
+                        <mpath href="#line1"/>
+                </animateMotion>
+        </use>
+
+        <!--animation fish2-->
+        <use href="#fish2">
+                
+                <animateMotion begin="0s" dur="12s" repeatCount="indefinite" rotate="auto-reverse">
+                        <mpath href="#line2"/>
+                </animateMotion>
+        </use>
+        
+        <use href="#fish3">
+
+                <animateMotion begin="0s" dur="16s" repeatCount="indefinite" rotate="auto-reverse">
+                        <mpath href="#line3"/>
+                </animateMotion>
+        </use>
+
+</svg>

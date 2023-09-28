@@ -1,0 +1,41 @@
+body {
+  margin-top:10%;
+  margin-left:10%;
+  color:black;
+  padding-left:5%;
+  width: 100px;
+  background-color:gray;
+  background-image:url('pannalovemeat.png');
+  background-repeat: no-repeat;
+  background-position: 100% 150%;
+  }
+
+  a:link { color: black; }
+  a:visited { color: black; }
+  a:hover { color: red; }
+
+  h1{
+    color:white;
+    width:500px;
+  }
+  .star{
+    color:black;
+    padding-left:5%;
+  }
+  .heart{
+    color:red;
+    padding-left:5%;
+  }
+  .bigl{
+    color:white;
+    font-size:large;
+    font-weight:800;
+  }
+  table{
+    width:1000px;
+  }
+  #panna{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
